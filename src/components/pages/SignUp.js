@@ -16,7 +16,7 @@ class Session extends Component{
       email : e.target[2].value
     }
     console.log(res);
-    axios.post('http://localhost:4000/info/add', res)
+    axios.post('https://stemx-server.herokuapp.com/', res)
             .then(alert("Our team will get back to you"))
             .then(window.location = "/");
   }
