@@ -1,0 +1,101 @@
+.row{
+    color: white;
+    margin: 10%;
+    font-size: 1em;
+    text-align: center;
+}
+.mode:hover .col-md{
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.col-md{
+	padding: 5%;
+	margin:3%;
+	background-color: black;
+	border-style: solid;
+	border-width: 5%;
+	border-color: orangered;
+	border-radius: 10%;
+}
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+.row p{
+	font-family: 'Source Code Pro', monospace;
+    font-size: 1.2rem;
+}
+hr{
+	color: white;
+	border-width: 10px;
+}
+.col-md:hover{
+border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  animation-name: example;
+  animation-duration: 0.25s;
+  border-color: transparent;
+  border-left: 8px solid orangered;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+@keyframes example {
+    0%   {border-left: 2px solid #ffffff;}
+    25%  {border-left: 3px solid #ffe6e6;}
+    50%  {border-left: 4px solid #ff8080;}
+    100% {border-left: 5px solid orangered;}
+}
+span {
+
+    font: 700 2rem "Oswald", sans-serif;
+    letter-spacing: 0;
+    padding: .25em 0 .325em;
+    display: block;
+    margin: 0 auto;
+    text-shadow: 0 0 80px rgba(255,255,255,.5);
+
+/* Clip Background Image */
+
+    background: url(https://i.ibb.co/RDTnNrT/animated-text-fill.png) repeat-y;
+    -webkit-background-clip: text;
+    background-clip: text;
+
+/* Animate Background Image */
+
+    -webkit-text-fill-color: transparent;
+    -webkit-animation: aitf 80s linear infinite;
+
+/* Activate hardware acceleration for smoother animations */
+
+    -webkit-transform: translate3d(0,0,0);
+    -webkit-backface-visibility: hidden;
+
+}
+
+/* Animate Background Image */
+
+@-webkit-keyframes aitf {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 100% 50%; }
+}
+@media screen and (max-width: 770px){
+	.row{
+		color: white;
+		font-size: 1em;
+		text-align: center;
+	}
+	.col-md{
+		padding: 5%;
+		width: 50px;
+		background-color: transparent;
+		border-style: solid;
+		border-width: 5%;
+		border-color: transparent;
+		border-radius: 10%;
+	}
+}

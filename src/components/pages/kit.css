@@ -1,0 +1,99 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:900|Raleway:400,400i,700,700i);
+
+
+h1{
+    color: white;
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    text-decoration: underline  white 5px;
+    text-underline-offset: 1rem;
+}
+.kid{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    animation: fadeInAnimation ease-in-out 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+h2{
+    color: white;
+    text-align: center;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    font-weight: bold;
+}
+
+h5{
+    color: white;
+    text-align: center;
+    margin-top: 3%;
+    margin-bottom: 3%;
+
+}
+
+.gradient-list {
+    padding: 0;
+    max-width: 100%;
+  }
+.kit-data {
+    counter-increment: index; 
+    display: flex;
+    align-items: center;
+    padding: 12px 0;
+    box-sizing: border-box;
+    color: white;
+  }
+
+  .kit-data::before {
+    content: counters(index, ".", decimal-leading-zero);
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: bold;
+    min-width: 50px;
+    padding-right: 12px;
+    font-variant-numeric: tabular-nums;
+    align-self: flex-start;
+    background-image: linear-gradient(to bottom, aquamarine, orangered);
+    background-attachment: fixed;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .kit-data + .kit-data {
+    border-top: 1px solid rgba(255,255,255,0.2);
+  }
+
+  .button-kit{
+    display: flex;
+    padding: 8px 10px;
+    align-items: center;
+    margin-left: 45%;
+    margin-bottom: 2%;
+    background-color: #274c77; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
+  .button-kit:hover{
+
+    background-color: transparent;
+    color: #fff;
+    border-radius: 4px;
+    border: 2px solid #274c77;
+  }

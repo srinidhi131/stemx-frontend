@@ -1,0 +1,113 @@
+$size-width: 100vw;
+$size-height: 60vh;
+
+.carousel-container {
+  width: $size-width;
+  height: $size-height;
+  overflow: hidden;
+}
+
+.carousel {
+  display: flex;
+  width: $size-width * 7;
+  animation: sliding 40s infinite;
+  div {
+    width: $size-width;
+    height: $size-height;
+    background-size: cover;
+    background-position: center;
+  }
+  .image-one {
+    background-image: url("../images/drone.gif");
+  }
+  .image-two {
+    background-image: url("../images/earth.gif");
+  }
+  .image-three {
+    background-image: url("../images/code.gif");
+  }
+  .image-four {
+    background-image: url("../images/lego.gif");
+  }
+  .image-five {
+    background-image: url("../images/3d.gif");
+  }
+  .image-six {
+    background-image: url("../images/iot.gif");
+  }
+  .image-seven {
+    background-image: url("../images/app.gif");
+  }
+}
+
+@keyframes sliding {
+  20% {
+    transform: translateX(0);
+  }
+  30% {
+    transform: translateX(-$size-width);
+  }
+  40% {
+    transform: translateX(-$size-width*2);
+  }
+  50% {
+    transform: translateX(-$size-width *3);
+  }
+  60% {
+    transform: translateX(-$size-width *4);
+  }
+  70% {
+    transform: translateX(-$size-width *5);
+  }
+  80% {
+    transform: translateX(-$size-width *6);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  $size-width: 100vw;
+  $size-height: 60vh;
+
+  .carousel-container {
+    width: $size-width;
+    height: $size-height;
+  }
+
+  .carousel {
+    width: $size-width * 7;
+    > div {
+      width: $size-width;
+      height: $size-height;
+    }
+  }
+
+  @keyframes sliding {
+    20% {
+      transform: translateX(0);
+    }
+    30% {
+      transform: translateX(-$size-width);
+    }
+    40% {
+      transform: translateX(-$size-width*2);
+    }
+    50% {
+      transform: translateX(-$size-width *3);
+    }
+    60% {
+      transform: translateX(-$size-width *4);
+    }
+    70% {
+      transform: translateX(-$size-width *5);
+    }
+    80% {
+      transform: translateX(-$size-width *6);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+}
