@@ -13,7 +13,7 @@ class StemKit extends Component{
             <div className='text'>
               <h1 className='kit-title'> Junior Kits </h1>
               <h5 className='kit-text'> For ages: 6 to 10</h5>
-              <a href="/junior-kits"><button className="kit-button" type="button">More Details ></button></a>
+              <a href="junior-kits"><button className="kit-button" type="button">More Details ></button></a>
             </div>
           </div>
         </section>
